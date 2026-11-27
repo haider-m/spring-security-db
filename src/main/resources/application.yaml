@@ -1,13 +1,17 @@
+app:
+  security:
+    password-encoder: bcrypt # bcrypt | pbkdf2 | scrypt | argon2
+
 spring:
 
   application:
     name: spring-security-db
 
   datasource:
-    url: jdbc:mysql://localhost:3306/mysql
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: password
+    url: jdbc:mysql://localhost:3306/myapp_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: myuser
+    password: mypassword
 
   jpa:
     hibernate:
